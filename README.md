@@ -13,8 +13,8 @@ python -m pip install -e .
 - [x] Testing with pytest & various plugins
 - [x] Coverage with pycoverage & coveralls
 - [x] Documentation with sphinx, read-the-docs, & various plugins
-- [x] Scripts for automation
-- [x] GitHub Actions template for post-commit linting, testing, and coverage
+- [x] Scripts for automation of code review, documentation, and distribution
+- [x] GitHub Actions template for post-commit linting, coverage, and cross-platform testing
 
 ## Installation
 To install extra dependencies for development, install your package with one or all of the desired optional 

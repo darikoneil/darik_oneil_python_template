@@ -123,7 +123,7 @@ addopts = [
     "--color=yes",
     "-vv",
     "--diff-width=120",
-    "--html=./reports/pytest-report.html",
+    "--html=./tests/testing-report.html",
 ]
 tests = "tests"
 console_output_style = "progress"

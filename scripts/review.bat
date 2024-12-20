@@ -14,7 +14,7 @@ coverage json
 coverage lcov
 
 :: export coverage to html for development in IDE
-coverage html=reports/coverage
+coverage html=coverage
 
 :: report to console
 coverage report

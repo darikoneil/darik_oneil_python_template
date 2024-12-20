@@ -60,7 +60,8 @@ testing = [
     "pytest-sugar",
     "pytest-clarity",
     "pytest-html",
-    "toml"
+    "toml",
+    "tomli-w"
 ]
 linting = [
     "flake8",
@@ -80,6 +81,7 @@ coverage = [
     "coverage[toml]",
     "coveralls",
     "toml",
+    "tomli-w"
 ]
 distribution = [
     "build",

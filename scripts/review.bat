@@ -4,7 +4,10 @@
 cd ..
 
 :: format imports
-isort . ./%PROJECT_NAME% ./tests
+isort
+
+:: format files
+black ./%PROJECT_NAME%
 
 :: run test suite
 coverage run

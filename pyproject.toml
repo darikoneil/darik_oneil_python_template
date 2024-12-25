@@ -64,6 +64,7 @@ testing = [
     "tomli-w"
 ]
 linting = [
+    "black",
     "flake8",
     "flake8-annotations",
     "flake8-bugbear",
@@ -75,6 +76,7 @@ linting = [
     "flake8-simplify",
     "flake8-eradicate",
     "flake8-isort",
+    "isort"
     "tryceratops",
 ]
 coverage = [

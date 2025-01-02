@@ -9,12 +9,13 @@ python -m pip install -e .
 
 ## Features
 - [x] Package template file with pyproject.toml
+- [ ] Formatting with isort & black
 - [x] Linting with flake8 & various plugins
 - [x] Testing with pytest & various plugins
 - [x] Coverage with pycoverage & coveralls
 - [x] Documentation with sphinx, read-the-docs, & various plugins
 - [x] Scripts for automation of code review, documentation, and distribution
-- [x] GitHub Actions template for post-commit linting, coverage, and cross-platform testing
+- [x] GitHub Actions templates for post-commit linting, coverage, and cross-platform testing
 
 ## Installation
 To install extra dependencies for development, install your package with one or all of the desired optional 

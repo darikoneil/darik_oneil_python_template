@@ -9,7 +9,7 @@ python -m pip install -e .
 
 ## Features
 - [x] Package template file with pyproject.toml
-- [ ] Formatting with isort & black
+- [x] Formatting with isort & black
 - [x] Linting with flake8 & various plugins
 - [x] Testing with pytest & various plugins
 - [x] Coverage with pycoverage & coveralls

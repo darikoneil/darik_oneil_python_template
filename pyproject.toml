@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "PROJECT_NAME"
+name = "{{ project_name }}"
 version = "0.0.0"
 description = "DESCRIPTION"
 readme = "README.md"
@@ -101,11 +101,11 @@ documentation = [
     "sphinx-rtd-theme",
 ]
 all = [
-    "PROJECT_NAME[testing]",
-    "PROJECT_NAME[linting]",
-    "PROJECT_NAME[coverage]",
-    "PROJECT_NAME[distribution]",
-    "PROJECT_NAME[documentation]",
+    "{{ project_name }}[testing]",
+    "{{ project_name }}[linting]",
+    "{{ project_name }}[coverage]",
+    "{{ project_name }}[distribution]",
+    "{{ project_name }}[documentation]",
 ]
 
 
@@ -116,7 +116,7 @@ all = [
 
 [tool.setuptools]
 packages = [
-    "PROJECT_NAME",
+    "{{ project_name }}",
 ]
 
 

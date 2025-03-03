@@ -1,13 +1,17 @@
 @echo off
+setlocal enabledelayedexpansion
 
 :: move to project root
 cd ..
 
-:: formatting imports (paths because the config is broken & don't care to make it work)
-isort ./%PROJECT_NAME% ./tests
+echo [0;33m "Formatting (RUFF)..." [0m
+ruff format ./!%PROJECT_NAME%! ./tests
 
-:: formatting code (paths because the config is broken & don't care to make it work)
-black ./%PROJECT_NAME% ./tests
+echo [0;33m "Linting (RUFF)..." [0m
+ruff check ./!%PROJECT_NAME%! ./tests -o .ruff.json --output-format json --fix --no-cache
 
-:: linting (putting paths here too because autism)
-flake8 ./%PROJECT_NAME%
+:: too opinionated for linting tests
+echo [0;33m "Linting (FLAKE8 PLUGINS)..." [0m
+flake8 ./!%PROJECT_NAME%!
+
+echo [0;33m "Finished Formatting & Linting
